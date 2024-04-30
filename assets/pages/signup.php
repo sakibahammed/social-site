@@ -1,12 +1,7 @@
 
     <h4 class=" text-center mt-5">Welcome To The Free Social Media Without Restriction</h4>
 
-    <?php
-    print_r($_SESSION['error']);
-
-
-
-?>
+   
     <div class="login">
         <div class="col-4 bg-white border rounded p-3 shadow-sm">
             <form method="post" action="assets/php/actions.php?signup">
@@ -25,6 +20,7 @@
                 </div>
 
                 <?=showError('first_name')?>
+                <?=showError('last_name')?>
                 <div class="d-flex gap-3 my-3">
                     <div class="form-check">
                         <input class="form-check-input" type="radio" name="gender" id="exampleRadios1"
@@ -46,14 +42,17 @@
                     <input type="email" name="email" class="form-control rounded-0" placeholder="username/email">
                     <label for="floatingInput">email</label>
                 </div>
+                <?=showError('email')?>
                 <div class="form-floating mt-1">
                     <input type="text" name="username" class="form-control rounded-0" placeholder="username/email">
                     <label for="floatingInput">username</label>
                 </div>
+                <?=showError('username')?>
                 <div class="form-floating mt-1">
                     <input type="password" name="password" class="form-control rounded-0" id="floatingPassword" placeholder="Password">
                     <label for="floatingPassword">password</label>
                 </div>
+                <?=showError('password')?>
 
                 <div class="mt-3 d-flex justify-content-between align-items-center">
                     <button class="btn btn-primary" type="submit">Sign Up</button>
