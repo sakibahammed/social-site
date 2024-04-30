@@ -1,5 +1,12 @@
 
     <h4 class=" text-center mt-5">Welcome To The Free Social Media Without Restriction</h4>
+
+    <?php
+    print_r($_SESSION['error']);
+
+
+
+?>
     <div class="login">
         <div class="col-4 bg-white border rounded p-3 shadow-sm">
             <form method="post" action="assets/php/actions.php?signup">
@@ -16,6 +23,8 @@
                         <label for="floatingInput">last name</label>
                     </div>
                 </div>
+
+                <?=showError('first_name')?>
                 <div class="d-flex gap-3 my-3">
                     <div class="form-check">
                         <input class="form-check-input" type="radio" name="gender" id="exampleRadios1"
