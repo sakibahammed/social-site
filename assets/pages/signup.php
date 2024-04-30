@@ -1,10 +1,9 @@
 
+    <h4 class=" text-center mt-5">Welcome To The Free Social Media Without Restriction</h4>
     <div class="login">
-        <div class="col-4 bg-white border rounded p-4 shadow-sm">
+        <div class="col-4 bg-white border rounded p-3 shadow-sm">
             <form>
                 <div class="d-flex justify-content-center">
-
-                    <img class="mb-4" src="img/pictogram.png" alt="" height="45">
                 </div>
                 <h1 class="h5 mb-3 fw-normal">Create new account</h1>
                 <div class="d-flex">
