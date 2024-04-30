@@ -17,7 +17,7 @@
     function showError($field){
         if(isset($_SESSION['error'])){
             $error = $_SESSION['error'];
-            if($field ==$error['field']){
+            if(isset($error['$field']) && $field ==$error['field']){
                 ?>
                     <div class="alert alert-danger my-2" role = "alert">
                         <?=$error['msg']?>
@@ -25,6 +25,16 @@
 
                 <?php
             }
+        }
+    }
+
+
+    //function for show previous form data
+
+    function showFormData($field){
+        if(isset($_SESSION['formdata'])){
+            $formdata = $_SESSION['formdata'];
+            return $formdata[$field];
         }
     }
 

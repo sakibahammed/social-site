@@ -10,11 +10,11 @@
                 <h1 class="h5 mb-3 fw-normal">Create new account</h1>
                 <div class="d-flex">
                     <div class="form-floating mt-1 col-6 ">
-                        <input type="text" name="first_name" class="form-control rounded-0" placeholder="username/email">
+                        <input type="text" value="<?=showFormData('first_name')?>" name="first_name" class="form-control rounded-0" placeholder="username/email">
                         <label for="floatingInput">first name</label>
                     </div>
                     <div class="form-floating mt-1 col-6">
-                        <input type="text" name="last_name" class="form-control rounded-0" placeholder="username/email">
+                        <input type="text" value="<?=showFormData('last_name')?>" name="last_name" class="form-control rounded-0" placeholder="username/email">
                         <label for="floatingInput">last name</label>
                     </div>
                 </div>
@@ -39,12 +39,12 @@
                     
                 </div>
                 <div class="form-floating mt-1">
-                    <input type="email" name="email" class="form-control rounded-0" placeholder="username/email">
+                    <input value="<?=showFormData('email')?>" type="email" name="email" class="form-control rounded-0" placeholder="username/email">
                     <label for="floatingInput">email</label>
                 </div>
                 <?=showError('email')?>
                 <div class="form-floating mt-1">
-                    <input type="text" name="username" class="form-control rounded-0" placeholder="username/email">
+                    <input value="<?=showFormData('username')?>" type="text" name="username" class="form-control rounded-0" placeholder="username/email">
                     <label for="floatingInput">username</label>
                 </div>
                 <?=showError('username')?>

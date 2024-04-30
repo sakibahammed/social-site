@@ -6,7 +6,9 @@ if(isset($_GET['signup'])){
 
     }else{
         $_SESSION['error']=$response;
+        $_SESSION['formdata'] = $_POST;
         header("location:../../?signup");
+        
     }
 
 }

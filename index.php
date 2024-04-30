@@ -16,3 +16,4 @@ showPage('footer');
 
 
 unset($_SESSION['error']);
+unset($_SESSION['formdata']);
