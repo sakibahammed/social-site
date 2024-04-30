@@ -47,6 +47,7 @@
 
     function validateSignupForm($form_data){
         $response = array();
+        $response['status']=true;
         if(!$form_data['password']){
             $response['msg']="password is not given" ;
             $response['status'] = false;
